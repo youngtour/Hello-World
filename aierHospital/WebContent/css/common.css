@@ -1,0 +1,76 @@
+﻿@charset "utf-8"; 
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td {margin: 0;padding: 0;}
+html{overflow-y:scroll}
+body{height:100%;background-color:#fff}
+body,button,input,select,textarea,fieldset,label{font:normal normal 16px/26px Microsoft YaHei, Verdana, Geneva, sans-serif, tahoma, Srial, helvetica, sans-serif;color:#333; }
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,ol{list-style:none}
+fieldset,img{border:0 none;}
+input,select,textarea,button{font-size:100%;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}/** **/
+button,input[type=button],input[type=submit]{cursor:pointer}
+input[type=search]{-webkit-appearance:textfield}
+textarea{overflow-y:auto;resize:vertical}i{font-style:normal}
+.clear{ clear:both;}
+.clearfix:after{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; } 
+.hidden{display:none}
+a{color:#494351;text-decoration:none;cursor:pointer;}
+a:hover{color:#0068a5;text-decoration:none;}
+a[onclick*="swtClick"]{cursor:pointer;}
+
+.w1200{ width:1432px; margin:0 auto;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.ml20{ margin-left:20px;}
+.header{ background-color:#fff;}
+.header .eyetop{ height:30px; background-color:#424242;}
+.header .eyetop .tp{ height:30px; position:relative;}
+.header .eyetop .tp .tp1{height:30px;  width:500px; position:absolute; left:0px; top:0px; color:#fff; font-size:14px; }
+.header .eyetop .tp .tp2{ width:500px; position:absolute; right:0px; top:0px;color:#fff; font-size:14px; }
+.header .eyetop .tp .tp2 p{ height:24px; line-height:24px; color:#fff; font-size:14px;  text-align:right; position:relative; }
+.header .eyetop .tp .tp2 p span{  display:block; position:absolute; top:3px; height:24px;}
+.header .eyetop .tp .tp2 p .s1{width:370px; left:0px; text-align:right;}
+.header .eyetop .tp .tp2 p .s2{width:120px; right:0px; text-align:right;}
+.header .eyetop .tp .tp2 p a{ display:inline-block; overflow:hidden; text-align:center; float:left; width:24px;  position:relative; height:24px; line-height:24px; border-radius:24px; background-color:#fff; margin:0px 2px; }
+.header .eyetop .tp .tp2 p a img{ position:absolute; width:20px; height:20px; top:2px; left:2px;}
+.header .eyetop .tp .tp2 p a i{position: absolute; top: 24px; left: 0px; }
+.eyehead{ height:130px;}
+.eyehead .logo{ width:300px; height:70px; float:left; margin:35px 0px 0px 25px;display:inline;}
+.eyehead .xs{ width:560px; float:left;margin:25px 0px 0px 30px; }
+.eyehead .xs span{ display:block; float:left;text-align:center;  width:110px;}
+.eyehead .xs span p{ font-size:12px;  line-height:16px; padding:5px 0px 0px 0px;}
+.eyehead .tel{ width:243px; height:54px; float:left; margin:25px 0px 0px 30px; display:inline;}
+.eyehead .tel img{width: 95%; height: auto; margin: 5px 0px 0px 10px;}
+.eyehead .zx{ width: 270px; float: left;margin: 10px 0px 0px 0px;display: inline; text-align: right;}
+.eyehead .zx a{display: inline-block; background: #1b70da;margin: 0px 0px 0px 20px; padding: 2px 20px;border-radius: 10px;color: #fff;}
+.eyehead .zx a:first-child{background:#6dba2c;}
+.eyehead .zx a:hover{ border-radius:0;}
+.eyemenu{ background-color:#006adc;     border-bottom: #6dba2c 5px solid; }
+.menu { width:1200px; margin:0 auto;height: 50px;line-height: 50px;background-color:#0069dc;}
+.menu li{float: left; width:150px; text-align:center;position: relative; z-index:9999;}
+.menu li a:hover {color: #fff;background-color:#6eb92b;}
+.menu li.focusa {background-color:#6eb92b;}
+.menu li a { width:100%;display: block;float: left;height: 50px;line-height:50px; color:#fff; text-decoration:none; text-align:center;}
+.menu li ul {position: absolute;left: 0;background-color:#0069dc;width: 150px;display: none; z-index:9999;}
+.menu li ul a {width: 150px; height:40px; line-height:40px; overflow:hidden;}
+.menu li .one {top: 50px;}
+.menu li .one li a:hover {background-color:#6eb92b;}
+.menu li ul.two {left: 150px;}
+.menu li ul.hdw {left: 150px;}
+
+.aierbottomeye2{height:auto; background-color:#3e3e3e; margin: 0 auto;}
+.aierbottomeye2 ul li{ float:left; text-align:center; margin-right:40px;}
+.boxbottomeye{ width:1102px; height:360px; margin: 0 auto; }
+.boxbottomeye1{ width:1102px; height:200px; margin: 0 auto; background-image:url(http://www.aier023.com/skin/default/images/bottombg.jpg); padding-top:20px;}
+
+.container{width:1200px; margin:0 auto; padding-bottom:30px;}
+.footer{}
+
+
+/*鍏充簬鐖卞皵*/
+.gyaier{ background:url(../images/gybg.gif); height:578px;  margin:0 auto;}
+.gy_map{ width:730px; background:url(../images/gy_map.jpg) no-repeat; height:550px; float:left;}
+.gy_map .t{ padding:120px 0px 0px 100px; height:35px; line-height:35px; font-size:30px; color:#fff;}
+.gy_map .t i{ font-size:14px; font-weight:normal;}
+.gy_map p{ padding:20px 0px 10px 100px; line-height:28px; color:#fff; text-indent:2em; font-size:16px;}
+.gy_ty{ width:674px; float:left; padding:100px 0px 0px 20px;}
+.gy_ty a{ display:block; width:212px;  float:left; margin:10px 0px 0px 10px;  display:inline;}
