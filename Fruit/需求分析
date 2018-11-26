@@ -1,0 +1,65 @@
+实现的功能
+
+index.jsp(首页，可以浏览但是加购需要先注册、登录)
+
+注册、登录--->用户---->加购，浏览商品详情，浏览账单，结算商品，购买成功后可以进行商品评价
+	   |
+	   ----->员工---->查看商品表（增减商品，看库存，保质期，仓库，增减资讯）
+	   							  	|		|	    |
+	   							 	|		| 	  	----->保质期  临近-->特价卖出、已过-->下架
+								  	|		----->不足--->补货
+									----->类似文章上传
+
+数据库建表
+
+1、果蔬（编号，名称，品种，价格，库存，进货日期，保质期，储存条件）
+FruVeg(	fid int,
+	 	fname varchar(32),
+		fvariety varchar(32),
+		fprice varchar(32),
+		finventory varchar(32),
+		findate date,
+		foffdate date,
+		fsave varchar(32));
+
+2、员工（编号，姓名，密码，性别，电话，入职日期）
+Worker(	wid int,
+		wname varchar(32),
+		wpwd varchar(32),
+		wgender varchar(8),
+		wtel int,
+		windate date);
+3、仓库（员工编号，蔬果编号，进货日期，进货数量，进货单价）
+Store(	wid int,
+		fid int,
+		findate date,
+		snum int,
+		sprice int);
+4、用户（用户编号，姓名，密码，收货地址，电话）
+User(	uid int,
+		uname varchar(32),
+		upwd varchar(32),
+		uaddress varchar(64),
+		utel int);
+5、账单（账单编号，用户 编号，果蔬编号，购买数量，产品单价）
+Check(	cid int,
+		uid int,
+		fin int,
+		cnum int,
+		cprice int);
+6、评价（果蔬编号，用户编号，产品评星，评价内容，评价时间）
+Evaluate(	fid int,
+			uid int,
+			estar varchar(32),
+			econtent varchar(128),
+			edate date);
+7、资讯表（编号，时间，主题，内容）
+Message(	mid int,
+			mtime date,
+			theme varchar(64),
+			content varchar(128));
+8、商品介绍（果蔬编号，图片，产地，详情）
+Introduce(	fid int,
+			ipic varchar(64),
+			fplace varchar(32),
+			details varchar(128));
